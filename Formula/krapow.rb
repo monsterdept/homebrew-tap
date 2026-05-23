@@ -5,23 +5,23 @@
 class Krapow < Formula
   desc "Run GitHub Actions self-hosted runners as Incus or Tart VMs"
   homepage "https://github.com/monsterdept/krapow"
-  version "0.2.1"
+  version "0.3.0"
   license "Apache-2.0"
 
   depends_on "cirruslabs/cli/tart" if OS.mac?
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/monsterdept/krapow/releases/download/v0.2.1/krapow_0.2.1_darwin_amd64.tar.gz"
-      sha256 "021c1ef9c54cf6a6ba1189646b7cd8e7895aefbb116a0e12ac3765e482a8676e"
+      url "https://github.com/monsterdept/krapow/releases/download/v0.3.0/krapow_0.3.0_darwin_amd64.tar.gz"
+      sha256 "2fa2d55916faf9ed6c520445127e3c792510e863b35cd9383565cf35eba416c9"
 
       define_method(:install) do
         bin.install "krapow"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/monsterdept/krapow/releases/download/v0.2.1/krapow_0.2.1_darwin_arm64.tar.gz"
-      sha256 "9229de6d67c0c99f3aa9dd271f1d14be99d0a72d1c9c2e015c80423a8bb06068"
+      url "https://github.com/monsterdept/krapow/releases/download/v0.3.0/krapow_0.3.0_darwin_arm64.tar.gz"
+      sha256 "a5f49d9ad059b3a0220348d28a2df49f91e787a879834df73f452795b5583ec1"
 
       define_method(:install) do
         bin.install "krapow"
@@ -31,15 +31,15 @@ class Krapow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/monsterdept/krapow/releases/download/v0.2.1/krapow_0.2.1_linux_amd64.tar.gz"
-      sha256 "5b2acb9ddf16f633b45abe60b82ee7c159a908290ae998d80fa141df46d47707"
+      url "https://github.com/monsterdept/krapow/releases/download/v0.3.0/krapow_0.3.0_linux_amd64.tar.gz"
+      sha256 "ac01752bc9a5ff75f6f53e8937dd467b9002cefb6aff1cbef0ecfb4db75e0264"
       define_method(:install) do
         bin.install "krapow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/monsterdept/krapow/releases/download/v0.2.1/krapow_0.2.1_linux_arm64.tar.gz"
-      sha256 "138375eb88a8a04ed43caac78376e60fae160a533997b57d44f4ef193fce0c6a"
+      url "https://github.com/monsterdept/krapow/releases/download/v0.3.0/krapow_0.3.0_linux_arm64.tar.gz"
+      sha256 "2f55493ee936ad95c3a33e5a405a95fc8ddadb78f4e1ae10a309437767be8c2a"
       define_method(:install) do
         bin.install "krapow"
       end
