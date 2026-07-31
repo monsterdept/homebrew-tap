@@ -5,28 +5,28 @@
 class Whatson < Formula
   desc "Find out what is listening on a TCP port, fast"
   homepage "https://github.com/monsterdept/whatson"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://dl.dept.monster/whatson/whatson_0.1.0_darwin_amd64.tar.gz"
-      sha256 "fef50d84695ebbcefae90b3db948f5358127c00e209ecde3ca5382e90e412d46"
+      url "https://dl.dept.monster/whatson/whatson_0.1.1_darwin_amd64.tar.gz"
+      sha256 "272a539bb192d96bd64e1befb82294cddf1e082a620609ebb1ba9d6e06b07aac"
     end
     if Hardware::CPU.arm?
-      url "https://dl.dept.monster/whatson/whatson_0.1.0_darwin_arm64.tar.gz"
-      sha256 "4b73926688202d7609eaa580cb864c08799d7145365cf2627e6f7834d91477e0"
+      url "https://dl.dept.monster/whatson/whatson_0.1.1_darwin_arm64.tar.gz"
+      sha256 "d7075ea7443247363973069f819aa8775b5cce75f139b33adea282a2c5eba0db"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://dl.dept.monster/whatson/whatson_0.1.0_linux_amd64.tar.gz"
-      sha256 "592e29af077e0575a05ef92e9ad0f87742f389401cbeef02730d035c55deb616"
+      url "https://dl.dept.monster/whatson/whatson_0.1.1_linux_amd64.tar.gz"
+      sha256 "2ba9c4a6b0720b0e4647fec29c366fbe8aa288a25c12c60c44ee797d2abc7bab"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://dl.dept.monster/whatson/whatson_0.1.0_linux_arm64.tar.gz"
-      sha256 "2268da5a8f9dd55ee3fcaa92f99d3f8cb8506ebdc1d2f6d81a9c4aaeba5269c0"
+      url "https://dl.dept.monster/whatson/whatson_0.1.1_linux_arm64.tar.gz"
+      sha256 "8702d05333725f5bd931acf18d10308b56e98b78117221d953ea3a945191bd46"
     end
   end
 
