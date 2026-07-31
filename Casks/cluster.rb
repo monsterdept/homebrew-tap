@@ -10,7 +10,7 @@ cask "cluster" do
 
   # arm64 only — on-device inference is MLX/Metal on Apple Silicon.
   depends_on arch: :arm64
-  depends_on macos: :tahoe
+  depends_on macos: ">= :tahoe"
 
   app "Cluster.app"
 
