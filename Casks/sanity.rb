@@ -15,6 +15,7 @@ cask "sanity" do
   depends_on macos: :big_sur
 
   app "Sanity.app"
+  binary "#{appdir}/Sanity.app/Contents/MacOS/sanity"
 
   zap trash: [
     "~/Library/Application Support/Sanity",
