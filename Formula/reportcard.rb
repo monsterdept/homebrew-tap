@@ -5,7 +5,7 @@
 class Reportcard < Formula
   desc "Turn your GitHub history into an annotated data story"
   homepage "https://github.com/monsterdept/reportcard"
-  version "0.3.0"
+  version "0.4.1"
   license "Apache-2.0"
 
   # The web UI is compiled into the binary; gh is what reads GitHub, including
@@ -14,23 +14,23 @@ class Reportcard < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://dl.dept.monster/reportcard/reportcard_0.3.0_darwin_amd64.tar.gz"
-      sha256 "aaed34e943027340c419d24a46c3cdca3df275fba238c91d5f2d33d24496df9a"
+      url "https://dl.dept.monster/reportcard/reportcard_0.4.1_darwin_amd64.tar.gz"
+      sha256 "b80fd24539cb7eb91957500107a28a30ef31f938fc7db94c5d23552ffacebe42"
     end
     if Hardware::CPU.arm?
-      url "https://dl.dept.monster/reportcard/reportcard_0.3.0_darwin_arm64.tar.gz"
-      sha256 "6e6751f0eba3dd61c3da5d6ebe3557f2d155a4354953565bbea56bd7b9b98487"
+      url "https://dl.dept.monster/reportcard/reportcard_0.4.1_darwin_arm64.tar.gz"
+      sha256 "31aa345ccdb59c87265f381c599cb0df7af0130f66f9e75a0d351dc6ef0cb922"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://dl.dept.monster/reportcard/reportcard_0.3.0_linux_amd64.tar.gz"
-      sha256 "c41233236c2283fed9020c2e2567ed8f7006b3d3df23795a9c51fd374af5fc17"
+      url "https://dl.dept.monster/reportcard/reportcard_0.4.1_linux_amd64.tar.gz"
+      sha256 "053024c57dc894f38e2001a62b200f73d0198e7092878338237ed7deb798abca"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://dl.dept.monster/reportcard/reportcard_0.3.0_linux_arm64.tar.gz"
-      sha256 "93ee38bce60bf95e4efc6690544a90a8a37268383a9ff5224a79be2cdf3ba9a0"
+      url "https://dl.dept.monster/reportcard/reportcard_0.4.1_linux_arm64.tar.gz"
+      sha256 "84d811bd1a9507536d78ec18c59ac21acbce3ec9dda92e65874493a38a00041a"
     end
   end
 
